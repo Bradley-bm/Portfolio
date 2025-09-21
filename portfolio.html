@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing page</title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: beige;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+        }
+        li a:hover{
+            background-color: grey;
+        }
+    </style>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Intresting Information</h2>
+        <img src="images.jpeg"/>
+        <br/>
+        <button onclick="dog();">Read More!</button>
+        <p id="dog-info"></p>
+        <img src="images.jpg"/>
+        <br/>
+        <button onclick="cat();">Read More!</button>
+        <p id="cat-info"></p>
+        <script>
+            function dog(){
+                document.getElementById("dog-info").innerHTML="Dogs are loyal animals that have lived with humans for thousands of years. 🐕 They have an excellent sense of smell, which is much stronger than ours. Dogs can dream while sleeping, and sometimes their paws or faces twitch during it. They communicate through body language, like wagging their tails or barking. There are hundreds of breeds, from tiny Chihuahuas to giant Great Danes."
+            }
+            function cat(){
+                document.getElementById("cat-info").innerHTML="Cats are independent yet affectionate pets that have been kept by humans for thousands of years. 🐱 They are natural hunters with sharp eyesight, especially good at seeing in low light. Cats communicate by purring, meowing, and even using their tails to show emotions. A group of cats is called a **clowder**, and kittens are born blind and deaf. The oldest recorded cat lived to be **38 years old**, which is extremely rare!"
+            }
+        </script>
+    </body>
+</html>
